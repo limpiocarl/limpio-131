@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+        <title>Bootstrap Grids and Components</title>
+
+        <!-- bootstrap cdn css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+                integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+                crossorigin="anonymous">
+
+        <!-- external css -->
+        <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+                <a class="navbar-brand" href="#">
+                        < limpio-carl>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                        <a class="nav-link" href="#">About Me<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="#">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a href="" class="nav-link">Tools</a>
+
+                                </li>
+                        </ul>
+                </div>
+        </nav>
+
+        <div class="container-fluid">
+                <div class="row">
+                        <div class="col-xl-2 d-none d-xl-block accordion p-0" id="accordionExample">
+
+                                <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                                <h2 class="mb-0">
+                                                        <button class="btn btn-link btn-block text-left" type="button"
+                                                                data-toggle="collapse" data-target="#collapseOne"
+                                                                aria-expanded="true" aria-controls="collapseOne">
+                                                                Services
+                                                        </button>
+                                                </h2>
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                                data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                        <ul class="list-unstyled">
+                                                                <li>
+                                                                        <a href="">Frontend Design</a>
+                                                                </li>
+                                                                <li>
+                                                                        <a href="">Backend Server</a>
+                                                                </li>
+                                                                <li>
+                                                                        <a href="">Full-Stack Development</a>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                                <h2 class="mb-0">
+                                                        <button class="btn btn-link btn-block text-left collapsed"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseTwo" aria-expanded="false"
+                                                                aria-controls="collapseTwo">
+                                                                Projects
+                                                        </button>
+                                                </h2>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                                data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                        <ul class="list-unstyled">
+                                                                <li>
+                                                                        <a href="">HTML</a>
+                                                                </li>
+                                                                <li>
+                                                                        <a href="">Bootstrap</a>
+                                                                </li>
+                                                                <li>
+                                                                        <a href="">Node JS Server</a>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                                <h2 class="mb-0">
+                                                        <button class="btn btn-link btn-block text-left collapsed"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseThree" aria-expanded="false"
+                                                                aria-controls="collapseThree">
+                                                                Tools
+                                                        </button>
+                                                </h2>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                                data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                        <ul class="list-unstyled">
+                                                                <li>
+                                                                        <a href="">Core Tools</a>
+                                                                </li>
+                                                                <li>
+                                                                        <a href="">Other Tools</a>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                </div>
+
+                        </div>
+                        <div class="col-xl-10 col-lg-12 p-0">
+                                <div class="text-center text-white bg-dark" id="intro">
+                                        <img src="./images/profile-pic.jpg" alt="ada-lovelace"
+                                                class="img-size rounded-circle">
+
+                                        <div class="mt-1">
+                                                <h2 class="d-inline">Carl Angelo Limpio</h2>
+                                        </div>
+
+                                        <h4 class="my-2">Full-Stack Web Developer</h4>
+                                        <p class="mx-auto w-50 mt-4 mb-5">I'm a Zuitt Bootcamper currently working as a
+                                                Reliability Engineer pursuing to
+                                                shift a
+                                                career in
+                                                web development. I am a fan of music, technology, anime, and reading.
+                                        </p>
+
+                                        <!-- carousel -->
+                                        <div id="carouselExampleIndicators" class="carousel slide w-50 col-md mx-auto"
+                                                data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                        <li data-target="#carouselExampleIndicators" data-slide-to="0"
+                                                                class="active"></li>
+                                                        <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                                                        </li>
+                                                        <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                                                        </li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                        <div class="carousel-item active col-md">
+                                                                <img class="d-block w-100 img-fluid"
+                                                                        src="./images/music.jpg" alt="First slide">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                        <h5>Music</h5>
+                                                                        <p>I love music and I used to play a guitar.</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                                <img class="d-block w-100 img-fluid"
+                                                                        src="./images/movie.jpg" alt="Second slide">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                        <h5>Star Wars</h5>
+                                                                        <p>My favorite movie series.</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                                <img class="d-block w-100 img-fluid"
+                                                                        src="./images/sports.jpg" alt="Third slide">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                        <h5>Sports</h5>
+                                                                        <p>I'm an active person, and I play several
+                                                                                sports especially basketball.</p>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <a class="carousel-control-prev" href="#carouselExampleIndicators"
+                                                        role="button" data-slide="prev">
+                                                        <span class="carousel-control-prev-icon"
+                                                                aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carouselExampleIndicators"
+                                                        role="button" data-slide="next">
+                                                        <span class="carousel-control-next-icon"
+                                                                aria-hidden="true"></span>
+                                                        <span class="sr-only">Next</span>
+                                                </a>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div class="col-xl-2 d-none d-xl-block accordion p-0" id="accordionExample"></div>
+
+                        <div
+                                class="col-xl-10 col-lg-12 text-light text-center bg-secondary d-flex justify-content-center py-5">
+                                <h2>Projects</h2>
+                        </div>
+
+                        <div class="col-xl-2 d-none d-xl-block accordion p-0" id="accordionExample"></div>
+
+                        <div
+                                class="col-xl-10 col-lg-12 text-light text-center bg-secondary d-flex justify-content-center px-4">
+
+                                <div class="bg-dark py-3 px-5 m-3 rounded">
+                                        <img class="img-fluid"
+                                                src="https://3.bp.blogspot.com/-7x5c_f1yzsQ/XHv9FZKHrEI/AAAAAAAADrE/4iGl9Lm6K2odX4SdWbU_RN6gZesx4IaGACEwYBhgL/s1600/html.jpg"
+                                                alt="html">
+                                        <h5 class="text-center mt-3">HTML</h5>
+                                        <p class="text-justify">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                                                molestiae ex
+                                                maxime amet consequatur maiores, iure voluptates dolor, omnis corrupti
+                                                sit
+                                                numquam placeat quibusdam dignissimos est veritatis, blanditiis
+                                                excepturi nulla!
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                                                itaque ut
+                                                tempora, consectetur alias ipsum tempore nisi, doloremque atque nulla ex
+                                                animi.
+                                                Labore quaerat odit dignissimos perspiciatis optio nesciunt earum.
+                                        </p>
+                                        <a class="text-primary" href="">Link to Project</a>
+                                </div>
+                                <div class="bg-dark py-3 px-5 m-3 rounded">
+                                        <img src="https://bs-uploads.toptal.io/blackfish-uploads/blog/post/seo/og_image_file/og_image/15063/REDESIGN-Speeding-up-Application-Development-with-Bootstrap-Luke_Social-3b49f4c2abf94e39b2f311ed9f0c3785.png"
+                                                alt="bootstrap" class="img-fluid">
+                                        <h5 class="text-center mt-3">Bootstrap</h5>
+                                        <p class="text-justify">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+                                                eveniet,
+                                                minima adipisci ratione eaque, quos aspernatur accusamus nulla quidem
+                                                quasi,
+                                                excepturi fugiat beatae. Omnis corporis quisquam labore aut accusamus
+                                                nobis.
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non provident a
+                                                libero,
+                                                eveniet beatae maiores nemo repellendus obcaecati saepe, nisi iure odit!
+                                                Beatae
+                                                suscipit repellat eveniet, aspernatur at eum voluptatum?
+                                        </p>
+                                        <a class="text-primary" href="">Link to Project</a>
+                                </div>
+                                <div class="bg-dark py-3 px-5 m-3 rounded">
+                                        <img src="https://clever-solution.com/wp-content/uploads/2020/04/5625%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D0%B0%D1%8F-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C-1-1280x720.png"
+                                                alt="node-js-server" class="img-fluid">
+                                        <h5 class="text-center mt-3">Node JS Server</h5>
+                                        <p class="text-justify">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas eaque
+                                                ducimus
+                                                nostrum soluta facere. Rem maiores corrupti qui aspernatur. Iste unde
+                                                quos vel
+                                                quidem? Accusamus saepe libero iure error ab! Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Hic, voluptatibus facere consequatur,
+                                                officia iste
+                                                pariatur natus nihil aliquam eum, provident porro inventore minima ipsum
+                                                aspernatur impedit. Rerum libero voluptatum placeat.
+                                        </p>
+                                        <a class="text-primary" href="">Link to Project</a>
+                                </div>
+
+                        </div>
+
+                        <div class="col-xl-2 d-none d-xl-block accordion p-0" id="accordionExample">
+                        </div>
+
+                        <div
+                                class="col-xl-10 col-lg-12 text-light text-center bg-dark d-flex justify-content-center pt-5">
+                                <h2>Contact Me</h2>
+
+                        </div>
+
+                        <div class="col-xl-2 d-none d-xl-block accordion p-0" id="accordionExample">
+                        </div>
+
+                        <div
+                                class="col-xl-10 col-lg-12 text-light text-center bg-dark d-flex justify-content-center py-2">
+
+                                <form>
+                                        <div class="form-group">
+                                                <label for="exampleFormControlInput1">Name</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                        placeholder="Your Name">
+                                        </div>
+                                        <div class="form-group">
+                                                <label for="exampleFormControlInput1">Email address</label>
+                                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                        placeholder="name@example.com">
+                                        </div>
+                                        <div class="form-group">
+                                                <label for="exampleFormControlInput1">Contact Number</label>
+                                                <input type="number" class="form-control" id="exampleFormControlInput1"
+                                                        placeholder="+63 3 900 000 0000">
+                                        </div>
+                                        <div class="form-group">
+                                                <label for="exampleFormControlSelect1">Concern</label>
+                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>Quotation</option>
+                                                        <option>Meeting</option>
+                                                        <option>Business Deal</option>
+                                                </select>
+                                                <div class="form-group">
+                                                        <label for="exampleFormControlTextarea1">Message</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                                rows="3"></textarea>
+                                                </div>
+                                                <button type="submit" class="btn bg-light">Send Email</button>
+
+                                        </div>
+
+                                </form>
+
+                        </div>
+
+
+
+
+
+
+                </div>
+        </div>
+        </div>
+
+
+
+
+        <!-- bootstrap cdn js jquery and popper-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+                crossorigin="anonymous"></script>
+
+</body>
+
+</html>
